@@ -1,0 +1,5 @@
+﻿"Heroes III WOG", "H3WOG"
+"StarCraft +Brood War", "StarCraft"
+"Worms Armageddon", "WA"
+"Heroes IV", "MMH7Game-Win64-Shipping"
+"Diablo III", "Diablo III64"
