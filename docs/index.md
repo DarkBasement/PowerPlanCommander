@@ -24,9 +24,11 @@ How to install:
 <li>Click Apply button and check the ‘Server Status’.<br>
 <img src='./images/PowerPlanSettings04.PNG'/> 
 <li>That’s it! Close the window. From now, every time you run h3wog or chrome your pc will switch to the ‘Low Performance’ plan. And it will switch the plan back when the app is closed.
+</li>
 </ol>
-
+<p>
 <ol>
 <li>Uninstall. Go to the Add or Remove Programs screen and remove it from there.<br>
-<img src='./images/Uninstall01.PNG'/> 
+<img src='./images/Uninstall01.PNG'/>
+</li>
 </ol>
