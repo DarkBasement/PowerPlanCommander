@@ -10,23 +10,23 @@ For example: when you run a full screen game, it consumes all single core CPU an
 How to install:
 <ol>
 <li>Create a [Low Performance] Windows power plan. Name it and customize it as you want.<br>
-<img src='./images/CreateNewLowPerformancePlan02.png'/>
+<img src='./images/CreateNewLowPerformancePlan02.PNG'/></li>
 <li>Leave the original power plan selected.<br>
-<img src='./images/CreateNewLowPerformancePlan03.png'/>
+<img src='./images/CreateNewLowPerformancePlan03.PNG'/></li>
 <li>Run the PowerPlanCommanderSetup. It will ask for elevated privileges and a path to install.<br>
-<img src='./images/Install01.png'/> 
+<img src='./images/Install01.PNG'/> 
 <li>When the installation is complete, a setup window will appear.<br>
-<img src='./images/PowerPlanSettings01.png'/> 
+<img src='./images/PowerPlanSettings01.PNG'/> 
 <li>Select the power plan you want to use for your application. You may also select a pre-defined process/application that will trigger the plan.<br>
-<img src='./images/PowerPlanSettings02.png'/> 
+<img src='./images/PowerPlanSettings02.PNG'/> 
 <li>You can also select a process/application from currently running apps or input it manually.<br>
-<img src='./images/PowerPlanSettings03.png'/> 
-<li>Click Apply button and check the ‘Server Status’.<br>
-<img src='./images/PowerPlanSettings04.png'/> 
-<li>That’s it! Close the window. From now, every time you run h3wog or chrome your pc will switch to the ‘Low Performance’ plan. And it will switch the plan back when the app is closed.
+<img src='./images/PowerPlanSettings03.PNG'/> 
+<li>Click Apply button and check the â€˜Server Statusâ€™.<br>
+<img src='./images/PowerPlanSettings04.PNG'/> 
+<li>Thatâ€™s it! Close the window. From now, every time you run h3wog or chrome your pc will switch to the â€˜Low Performanceâ€™ plan. And it will switch the plan back when the app is closed.
 </ol>
 
 <ol>
 <li>Uninstall. Go to the Add or Remove Programs screen and remove it from there.<br>
-<img src='./images/Uninstall01.png'/> 
+<img src='./images/Uninstall01.PNG'/> 
 </ol>
