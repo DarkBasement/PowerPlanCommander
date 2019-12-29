@@ -362,5 +362,16 @@ namespace PowerPlanCommander
                 this.edSelectedProcs.Text += selectedPopular.InternalName;
             }
         }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var aboutForm = new AboutBox())
+                aboutForm.ShowDialog(this);
+        }
     }
 }
