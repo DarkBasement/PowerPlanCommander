@@ -83,14 +83,18 @@ namespace Utils
         {
             var schemeGuid = Guid.Empty;
 
+            List<Guid> guids = new List<Guid>();
+
             uint sizeSchemeGuid = (uint)Marshal.SizeOf(typeof(Guid));
             uint schemeIndex = 0;
 
             while (PowerEnumerate(IntPtr.Zero, IntPtr.Zero, IntPtr.Zero, (uint)AccessFlags.ACCESS_SCHEME, schemeIndex, ref schemeGuid, ref sizeSchemeGuid) == 0)
             {
-                yield return schemeGuid;
+                guids.Add(schemeGuid);
                 schemeIndex++;
             }
+
+            return guids;
         }
 
         public static void SetCurrentPowerPlan(Guid planGuid)
@@ -116,7 +120,7 @@ namespace Utils
         private static string ReadFriendlyName(Guid schemeGuid)
         {
             uint sizeName = 1024;
-            StringBuilder friendlyName = new StringBuilder();
+            StringBuilder friendlyName = new StringBuilder((int)sizeName);
             PowerReadFriendlyName(IntPtr.Zero, ref schemeGuid, IntPtr.Zero, IntPtr.Zero, friendlyName, ref sizeName);
             return friendlyName.ToString();
         }

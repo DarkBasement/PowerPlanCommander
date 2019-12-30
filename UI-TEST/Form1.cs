@@ -74,5 +74,15 @@ namespace UI_TEST
                 this.btStartTimer.Text = "Stop";
             }
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.listBoxAllPlans.Items.Clear();
+            var powerPlans = Utils.PowerEnumerator.GetAllPowerPlans();
+            foreach (var plan in powerPlans)
+            {
+                this.listBoxAllPlans.Items.Add(plan.Item2 + " " + plan.Item1.ToString());
+            }
+        }
     }
 }

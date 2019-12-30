@@ -44,11 +44,13 @@
             this.lbResult = new System.Windows.Forms.Label();
             this.btStartTimer = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.listBoxAllPlans = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(380, 145);
+            this.button1.Location = new System.Drawing.Point(476, 168);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 26);
             this.button1.TabIndex = 0;
@@ -59,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 100);
+            this.label1.Location = new System.Drawing.Point(216, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             // edOriginal
             // 
-            this.edOriginal.Location = new System.Drawing.Point(181, 100);
+            this.edOriginal.Location = new System.Drawing.Point(277, 123);
             this.edOriginal.Name = "edOriginal";
             this.edOriginal.ReadOnly = true;
             this.edOriginal.Size = new System.Drawing.Size(100, 20);
@@ -75,7 +77,7 @@
             // 
             // btSave
             // 
-            this.btSave.Location = new System.Drawing.Point(181, 145);
+            this.btSave.Location = new System.Drawing.Point(277, 168);
             this.btSave.Name = "btSave";
             this.btSave.Size = new System.Drawing.Size(99, 26);
             this.btSave.TabIndex = 3;
@@ -86,7 +88,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(345, 100);
+            this.label2.Location = new System.Drawing.Point(441, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 4;
@@ -94,7 +96,7 @@
             // 
             // edNewPlan
             // 
-            this.edNewPlan.Location = new System.Drawing.Point(383, 100);
+            this.edNewPlan.Location = new System.Drawing.Point(479, 123);
             this.edNewPlan.Name = "edNewPlan";
             this.edNewPlan.Size = new System.Drawing.Size(96, 20);
             this.edNewPlan.TabIndex = 5;
@@ -102,7 +104,7 @@
             // 
             // btRestore
             // 
-            this.btRestore.Location = new System.Drawing.Point(578, 145);
+            this.btRestore.Location = new System.Drawing.Point(674, 168);
             this.btRestore.Name = "btRestore";
             this.btRestore.Size = new System.Drawing.Size(99, 27);
             this.btRestore.TabIndex = 6;
@@ -177,11 +179,31 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // listBoxAllPlans
+            // 
+            this.listBoxAllPlans.FormattingEnabled = true;
+            this.listBoxAllPlans.Location = new System.Drawing.Point(12, 125);
+            this.listBoxAllPlans.Name = "listBoxAllPlans";
+            this.listBoxAllPlans.Size = new System.Drawing.Size(198, 43);
+            this.listBoxAllPlans.TabIndex = 14;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 170);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "List All";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.listBoxAllPlans);
             this.Controls.Add(this.btStartTimer);
             this.Controls.Add(this.lbResult);
             this.Controls.Add(this.label3);
@@ -220,6 +242,8 @@
         private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.Button btStartTimer;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox listBoxAllPlans;
+        private System.Windows.Forms.Button button2;
     }
 }
 
